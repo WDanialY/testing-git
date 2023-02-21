@@ -1,0 +1,52 @@
+/*Hero Shot*/
+
+.hero-shot{
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-image: url(../images/student.jpg);
+    background-clip: border-box;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.film{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(112, 112, 112, .5);
+}
+
+.hook{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hook_header{
+    color: var(--neutral-color);
+    font-size: 48px;
+    line-height: 102%;
+}
+.hook_text{
+    color: var(--neutral-color);
+    font-size: 24px;
+    line-height: 133%;
+    
+}
+.hook_button{
+    color: var(--neutral-color);
+    background-color: var(--accent-color);
+    max-width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-size: 24px;
+    transition: var(--transition);
+}
+.hook_button:hover{
+    background-color: var(--accent-bright-color);
+}
