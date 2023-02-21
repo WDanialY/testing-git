@@ -1,5 +1,13 @@
 /*This part has to be in every page*/
 
+/*
+# Every section after header has to have this:
+```
+position: relative;
+top: 70px;
+```
+*/
+
 :root{
     --accent-color: #00ACDC;
     --accent-alt: #E97451;
@@ -25,9 +33,6 @@ a{
 }
 h1, h2, h3, h4, h5, h6{
     color: var(--primary-color);
-}
-p{
-    font-family: 'Merriweather', serif;
 }
 
 ._container{
