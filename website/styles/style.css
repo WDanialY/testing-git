@@ -90,3 +90,46 @@ Header has to be the same in every page
     color: var(--accent-color);
     border-left: var(--accent-color) solid 2px;
 }
+
+
+
+
+
+
+
+
+/* Adaptation */
+
+@media (max-width: 1040px){
+._container{
+    padding: 0 60px;
+}}
+
+
+@media (max-width: 900px){
+.nav_element{
+    margin: 25px;
+}
+
+.signin{
+    margin-left: 60px;
+}}
+    
+
+
+@media ( max-width: 800px ) {
+.signin{
+    margin-left: 20px;
+}
+
+._container{
+    padding: 0 30px;
+}
+
+.nav{
+    justify-content: center;
+}
+
+.nav_element{
+    margin: 15px;
+}}

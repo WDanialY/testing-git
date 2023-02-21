@@ -50,3 +50,31 @@
 .hook_button:hover{
     background-color: var(--accent-bright-color);
 }
+
+
+
+
+
+
+
+/* Adaptation */
+
+@media (max-width: 1040px){
+.hook_header{
+    font-size: 40px;
+}
+
+.hook_text{
+    font-size: 20px;
+}}
+        
+
+
+@media (max-width: 800px){
+    .hook_header{
+        font-size: 36px;
+    }
+    
+    .hook_text{
+        font-size: 17px;
+    }}
