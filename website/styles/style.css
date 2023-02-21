@@ -33,7 +33,7 @@ p{
 ._container{
     width: 100%;
     height: 100%;
-    padding: 0 120px;
+    padding: 0 9vw;
 }
 .accent{
     color: var(--accent-bright-color);
@@ -51,7 +51,7 @@ Header has to be the same in every page
     width: 100%;
     height: 70px;
     background-color: var(--neutral-color);
-    box-shadow: var(--primary-color) 1px 0 3px;
+    box-shadow: var(--primary-color) 1px 1px 3px;
 }
 
 
@@ -71,8 +71,7 @@ Header has to be the same in every page
 
 .nav{
     display: flex;
-    width: 300px;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .nav_element{
@@ -86,7 +85,6 @@ Header has to be the same in every page
     display: inline-block;
     padding-left: 2px;
     border-left: var(--primary-color) solid 2px;
-    margin-left: 12vw;
     transition: var(--transition);
 }
 
@@ -97,43 +95,4 @@ Header has to be the same in every page
 
 
 
-
-
-
-
-
 /* Adaptation */
-
-@media (max-width: 1040px){
-._container{
-    padding: 0 60px;
-}}
-
-
-@media (max-width: 900px){
-.nav_element{
-    margin: 25px;
-}
-
-.signin{
-    margin-left: 60px;
-}}
-    
-
-
-@media ( max-width: 800px ) {
-.signin{
-    margin-left: 20px;
-}
-
-._container{
-    padding: 0 30px;
-}
-
-.nav{
-    justify-content: center;
-}
-
-.nav_element{
-    margin: 15px;
-}}

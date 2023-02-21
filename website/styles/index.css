@@ -42,10 +42,10 @@
 .hook_button{
     color: var(--neutral-color);
     background-color: var(--accent-color);
-    max-width: 200px;
+    width: 200px;
     height: 50px;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 24px;
     transition: var(--transition);
 }
@@ -53,7 +53,22 @@
     background-color: var(--accent-hover);
 }
 
+/*Why Abroad Section*/
 
+.why-abroad{
+    width: 100%;
+    min-height: 600px;
+}
+
+
+/*Why Us Section*/
+
+.why-us{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
 
 
@@ -61,22 +76,15 @@
 
 /* Adaptation */
 
-@media (max-width: 1040px){
-.hook_header{
-    font-size: 40px;
-}
-
-.hook_text{
-    font-size: 20px;
-}}
-        
-
-
-@media (max-width: 800px){
-    .hook_header{
-        font-size: 36px;
+@media only screen and (max-width: 1200px){
+    .hook{
+        width: 75%;
     }
-    
-    .hook_text{
-        font-size: 17px;
-    }}
+}
+@media only screen and (max-width: 768px){
+    .hook{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}
