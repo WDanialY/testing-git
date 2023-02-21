@@ -6,7 +6,7 @@
  app.use(express.static('website'));
 
  app.get("/", function(req, res) {
-     res.sendFile(__dirname + "/website/index.html");
+     res.sendFile(__dirname + "/index.html");
  });
 
  app.get("/signin", function(req, res){
