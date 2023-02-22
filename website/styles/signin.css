@@ -1,7 +1,6 @@
 .signin_container{
     width: 100%;
     height: 62.5rem;
-    background-color: antiquewhite;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -11,7 +10,7 @@
     width: 300px;
     height: 30%;
     margin: auto;
-    background-color: aqua;
+    background-color: #ea8263;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -25,5 +24,47 @@
     background-color: antiquewhite;
     display: block;
     padding: 12px;
+}
 
+.wrong_password{
+    color: red;
+    font-weight: 500;
+    margin-left: 10%;
+}
+
+.forgot{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+
+
+
+/* SIGN UP FORM PAGE */
+.signup_form{
+    width: 300px;
+    height: 40%;
+    margin: auto;
+    background-color: #ea8263;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 15%;
+
+}
+
+
+/* Forgot password form page */
+
+.forgot_form{
+    width: 300px;
+    height: 20%;
+    margin: auto;
+    background-color: #ea8263;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 15%;
 }

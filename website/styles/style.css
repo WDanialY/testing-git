@@ -1,0 +1,104 @@
+/*This part has to be in every page*/
+
+/*
+# Every section after header has to have this:
+```
+position: relative;
+top: 70px;
+```
+*/
+
+:root{
+    --accent-color: #00ACDC;
+    --accent-alt: #E97451;
+    --accent-hover: #0099c3;
+    --accent-hover-alt: #c96648;
+    --accent-bright-color: #62C1DC;
+    --accent-bright-alt: #ea8263;
+    --primary-color: #707070;
+    --neutral-color: #fff;    
+    --transition: all .3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+h1, h2, h3, h4, h5, h6{
+    color: var(--primary-color);
+}
+
+._container{
+    width: 100%;
+    height: 100%;
+    padding: 0 9vw;
+}
+.accent{
+    color: var(--accent-bright-color);
+}
+
+
+/*HEADER*/
+/*
+Header has to be the same in every page
+*/
+
+.header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    background-color: var(--neutral-color);
+    box-shadow: var(--primary-color) 1px 1px 3px;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+}
+
+.logo{
+    color: var(--accent-color);
+    font-size: 32px;
+    margin-right: auto;
+}
+
+.nav{
+    display: flex;
+    gap: 30px;
+}
+
+.nav_element{
+    transition: var(--transition);
+}
+.nav_element:hover{
+    color: var(--accent-color);
+}
+
+.signin{
+    display: inline-block;
+    padding-left: 2px;
+    border-left: var(--primary-color) solid 2px;
+    transition: var(--transition);
+    margin-left: 30px;
+}
+
+.signin:hover{
+    color: var(--accent-color);
+    border-left: var(--accent-color) solid 2px;
+}
+
+
+
+/* Adaptation */

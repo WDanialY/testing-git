@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/signin.css">
 
@@ -32,18 +32,20 @@
     </header>
 
     <div class="signin_container">
-        <div class="signin_form">
+        <div class="signup_form">
             <form action="">
+                <input class="form" type="text" placeholder="Your name">
+                <input class="form" type="text" placeholder="Your фамилия">
                 <input class="form" type="email" placeholder="Your email">
                 <input class="form" type="password" placeholder="password">
+                <input class="form" type="password" placeholder="confirn password">
                 <div class="wrong_password">
-                    <p>Wrong password !</p>
+                    <p>Too short password !</p>
                 </div>
             </form>
         </div>
         <div class="forgot">
-            <p>Create an account. <a href="signup.html">Sign up</a></p>
-            <p>Forgot a <a href="">password</a></p>
+            <p>Already have an account. <a href="signin.html">Sign in</a></p>
         </div>
     </div>
 </body>
