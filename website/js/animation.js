@@ -1,11 +1,10 @@
-import Swiper, {Pagination, Navigation} from 'swiper';
-Swiper.use([Navigation]);
 
+console.log("Working?");
 const swiper = new Swiper('.swiper', {
     speed: 300,
     direction: 'horizontal',
     effect: 'slide',
-    loop: 'true',
+    loop: true,
     pagination:{
         el: '.swiper-pagination',
         type: 'bullets',
