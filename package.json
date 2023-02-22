@@ -15,5 +15,14 @@
     "http": "^0.0.1-security",
     "nodemon": "^2.0.20",
     "swiper": "^9.0.5"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WDanialY/testing-git.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WDanialY/testing-git/issues"
+  },
+  "homepage": "https://github.com/WDanialY/testing-git#readme"
 }
