@@ -91,6 +91,7 @@ Header has to be the same in every page
     padding-left: 2px;
     border-left: var(--primary-color) solid 2px;
     transition: var(--transition);
+    margin-left: 30px;
 }
 
 .signin:hover{
