@@ -108,10 +108,10 @@ Header has to be the same in every page
     border-left: var(--accent-color) solid 2px;
 }
 
-<<<<<<< HEAD
+
 .underline{
     text-decoration: underline;
-=======
+}
 /*Animations*/
 
 
@@ -122,7 +122,6 @@ Header has to be the same in every page
 
 .fade-in.appear{
     opacity: 1;
->>>>>>> 168d860088d2a546c68c5f08e309c60d5bf14296
 }
 
 
