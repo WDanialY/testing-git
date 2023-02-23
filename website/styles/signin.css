@@ -1,59 +1,156 @@
 .signin_container{
-    position: relative; 
+    position: relative;
     top: 70px;
-    /*Mandatory for all sections after header*/
-
     width: 100%;
-    height: calc(100vh - 70px); /*Window height - header's height = no overflow*/
-    display: flex;
+    height: calc(100vh - 70px);
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    display: flex;
+    background-color: #00ACDC;
 }
 
 .signin_form{
-    width: 300px;
-    background-color: var(--accent-color);
-    /* background: rgb(0,172,220);
-    background: linear-gradient(165deg, rgba(0,172,220,1) 0%, rgba(198,75,213,1) 50%, rgba(233,116,81,1) 100%); */
-    
+    width: 320px;
+    height: 437px;
+    margin: auto;
     align-items: center;
-    display: flex;
     justify-content: center;
-    border-radius: 25px;
-    flex-direction: column;
-
-    padding: 30px 0;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #fff;
 }
 
-.signin_title{
-    color: var(--neutral-color);
+.signin_header{
+    color: #00ACDC;
+    margin: 54px 104px;
 }
 
+.form{
+    width: 90%;
+    border: solid 2px #00acdc;
+    border-radius: 15px;
+    margin: 20px auto;
+    background-color: #fff;
+    display: block;
+    padding: 10px 0 10px 20px;
+    font-size: 16px;
+}
 
 .wrong_password{
-    color: var(--accent-alt);
+    color: red;
     font-weight: 500;
-    margin-left: 10%;
+    text-align: center;
 }
 
+.forgot_password{
+    text-decoration: underline;
+    color: #00ACDC;
+}
+
+.forgot_password_page{
+    text-decoration: underline;
+    color: #00ACDC;
+    margin-left: 20px;
+}
+
+.forgot{
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    font-size: 14px;
+    font-weight: 400px;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.signin_button{
+    margin: auto 90px;
+    width: 139px;
+    height: 51px;
+    left: calc(50% - 139px/2 + 1.5px);
+    top: calc(50% - 51px/2 + 168.5px);
+    background: linear-gradient(180deg, #00ACDC 0%, #0058DC 100%);
+    border-radius: 15px;
+    border: none;
+}
 
 
 
 
 /* SIGN UP FORM PAGE */
+.film{
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+}
+
+.signup_{
+    width: 100%;
+    height: calc(100vh - 70px);
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
 .signup_form{
-    width: 300px;
-    height: 40%;
-    margin: auto;
-    background-color: #ea8263;
+    width: 430px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #fff;
     align-items: center;
     justify-content: center;
     display: flex;
-    border-radius: 15%;
-
+    border-radius: 20px;
 }
 
+.bg_img{
+    width: 40%;
+    height: 100%;
+    background-image: url('../images/thailand.jpg');
+    background-size: cover;
+}
+
+.signup_container{
+    width: 60%;   
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #00ACDC;
+}
+
+.namel{
+    display: flex;
+    flex-direction: row;
+}
+
+.signup_button{
+    margin: 10px auto;
+    width: 139px;
+    height: 51px;
+    left: calc(50% - 139px/2 + 1.5px);
+    top: calc(50% - 51px/2 + 168.5px);
+    background: linear-gradient(180deg, #00ACDC 0%, #0058DC 100%);
+    border-radius: 15px;
+    border: none;
+}
+
+.signup_header{
+    color: #00ACDC;
+    margin: 50px 46px 30px;
+    font-size: 48px;
+}
+
+/* 
+.thailand_img{
+    width: 615px;
+    height: 730px;
+    align-items: center;
+    display: inline-block;
+    position: absolute;
+} */
 
 /* Forgot password form page */
 
@@ -61,9 +158,9 @@
     width: 300px;
     height: 20%;
     margin: auto;
-    background-color: #ea8263;
+    background-color: #fff;
     align-items: center;
     justify-content: center;
     display: flex;
-    border-radius: 15%;
+    border-radius: 20px;
 }

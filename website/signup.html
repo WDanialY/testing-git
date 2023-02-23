@@ -30,22 +30,28 @@
             </div>
         </div>
     </header>
-
-    <div class="signin_container">
-        <div class="signup_form">
-            <form action="">
-                <input class="form" type="text" placeholder="Your name">
-                <input class="form" type="text" placeholder="Your фамилия">
-                <input class="form" type="email" placeholder="Your email">
-                <input class="form" type="password" placeholder="password">
-                <input class="form" type="password" placeholder="confirn password">
-                <div class="wrong_password">
-                    <p>Too short password !</p>
-                </div>
-            </form>
+    <div class="signup_">
+        <div class="bg_img">
+            <div class="film"></div>
         </div>
-        <div class="forgot">
-            <p>Already have an account. <a href="signin.html">Sign in</a></p>
+        <div class="signup_container">
+            <div class="signup_form">
+                <form action="/signup" method="post">
+                    <h1 class="signup_header">Регистрация</h1>
+                    <div class="namel">
+                        <input name="name" class="form" type="text" placeholder="Имя" style="width: 40%; margin: 0 21.5px;">
+                        <input name="lname" class="form" type="text" placeholder="Фамилия" style="width: 40%; margin: 0 21.5px;">
+                    </div>
+                    <input name="email" class="form" type="email" placeholder="Электронная почта">
+                    <input name="password" class="form" type="password" placeholder="Пароль">
+                    <input name="password" class="form" type="password" placeholder="Подтвердите пароль">
+                    <div class="wrong_password">
+                        <p>Пароли не совпадают</p>
+                    </div>
+                    <button class="signup_button">Войти</button>
+                    <p class="forgot">Уже есть аккаунт? <a href="signin.html" class="forgot_password">Войти</a></p>
+                </form>
+            </div>
         </div>
     </div>
 </body>
