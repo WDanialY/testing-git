@@ -108,6 +108,10 @@ Header has to be the same in every page
     border-left: var(--accent-color) solid 2px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f04c8ad742854d95b7f7937906bcf14a5378c6f1
 .underline{
     text-decoration: underline;
 }
@@ -116,7 +120,7 @@ Header has to be the same in every page
 
 .fade-in{
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity .2s ease-in;
 }
 
 .fade-in.appear{
