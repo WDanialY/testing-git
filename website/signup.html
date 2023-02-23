@@ -38,17 +38,19 @@
             <div class="signup_form">
                 <form action="/signup" method="post">
                     <h1 class="signup_header">Регистрация</h1>
-                    <div class="namel">
-                        <input name="name" class="form" type="text" placeholder="Имя" style="width: 40%; margin: 0 21.5px;">
-                        <input name="lname" class="form" type="text" placeholder="Фамилия" style="width: 40%; margin: 0 21.5px;">
-                    </div>
-                    <input name="email" class="form" type="email" placeholder="Электронная почта">
-                    <input name="password" class="form" type="password" placeholder="Пароль">
-                    <input name="password" class="form" type="password" placeholder="Подтвердите пароль">
+                    <div class="form_sorted">
+                        <div class="namel">
+                            <input name="name" class="form_signup" type="text" placeholder="Имя" style="width: calc(35% - 5px); margin-right: 5px;">
+                            <input name="lname" class="form_signup" type="text" placeholder="Фамилия" style="width: calc(35% - 5px); margin-left: 5px;" >
+                        </div>
+                        <input name="email" class="form_signup" type="email" placeholder="Электронная почта">
+                        <input name="password" class="form_signup" type="password" placeholder="Пароль">
+                        <input name="password" class="form_signup" type="password" placeholder="Подтвердите пароль">
+                    </div>  
                     <div class="wrong_password">
                         <p>Пароли не совпадают</p>
                     </div>
-                    <button class="signup_button">Войти</button>
+                    <button class="signup_button" type="submit">Зарегестрироваться</button>
                     <p class="forgot">Уже есть аккаунт? <a href="signin.html" class="forgot_password">Войти</a></p>
                 </form>
             </div>
