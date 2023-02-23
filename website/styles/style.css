@@ -99,6 +99,9 @@ Header has to be the same in every page
     border-left: var(--accent-color) solid 2px;
 }
 
+.underline{
+    text-decoration: underline;
+}
 
 
 /* Adaptation */

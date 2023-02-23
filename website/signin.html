@@ -33,17 +33,23 @@
 
     <div class="signin_container">
         <div class="signin_form">
-            <form action="">
-                <input class="form" type="email" placeholder="Your email">
-                <input class="form" type="password" placeholder="password">
+            <h1 class="signin_header">Вход</h1>
+            <form action="/signin" method="post">
+                <input name="email" class="form" type="email" placeholder="Электронная почта">
+                <input name="password" class="form" type="password" placeholder="Пароль">
                 <div class="wrong_password">
-                    <p>Wrong password !</p>
+                    <p>Пароль неверный</p>
                 </div>
             </form>
-        </div>
-        <div class="forgot">
-            <p>Create an account. <a href="signup.html">Sign up</a></p>
-            <p>Forgot a <a href="">password</a></p>
+            <div class="forgot">
+                <p><a href="forgot-password.html" class="forgot_password">Восстановить пароль</a></p>
+            </div>
+
+            <button class="signin_button">Войти</button>
+
+            <div class="forgot">
+                <p>Нет аккаунта? <a href="signup.html" class="forgot_password">Регистрация</a></p>
+            </div>
         </div>
     </div>
 </body>
