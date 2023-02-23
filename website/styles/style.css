@@ -113,7 +113,7 @@ Header has to be the same in every page
 
 .fade-in{
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity .2s ease-in;
 }
 
 .fade-in.appear{
