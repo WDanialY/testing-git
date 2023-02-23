@@ -16,6 +16,7 @@ top: 70px;
     --accent-bright-color: #62C1DC;
     --accent-bright-alt: #ea8263;
     --primary-color: #707070;
+    --transtition-color: #dadada;
     --neutral-color: #fff;    
     --transition: all .3s;
 }
