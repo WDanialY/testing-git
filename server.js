@@ -1,44 +1,18 @@
  const express = require("express");
  const bodyParser = require('body-parser');
  const path = require('path');
- const MongoClient = require('mongodb').MongoClient;
-
- const urlDatabase = 'mongodb+srv://admin:<dxAPYGqu8wX9wIzJ>@test-1.2ykvs.mongodb.net/?retryWrites=true&w=majority';
- const nameDatabase = 'UserDatabase';
-
- const client = new MongoClient(urlDatabase);
-
-
+ const mongoose = require('mongoose');
  const app = express();
+ 
  app.use(bodyParser.urlencoded({extended: true}));
-
  app.use(express.static(path.join(__dirname, "website")));
 
+ const urlDatabase = 'mongodb://localhost:27017/';
 
- client.connect((err) =>{
-    if (err) throw err;
-    console.log('Database connected successfully');
-
-    const db = client.db(nameDatabase);
-
-    app.post("/signin", (req, res)=>{
-        db.collection('users').findOne({ email: email }, function(err, user) {
-            if (err) {
-              console.log(err);
-              res.status(500).send('Internal server error');
-            } else if (!user) {
-              res.status(401).send('Invalid email or password');
-            } else if (user.password !== password) {
-              res.status(401).send('Invalid email or password');
-            } else {
-              res.status(200).send('Sign in successful!');
-            }
-          });
-    })
- });
-
-
-
+ mongoose.connect(urlDatabase);
+ const UserSet = mongoose.model('users', {name: String});
+ const user = new UserSet({ name: 'Bob'});
+ user.save().then(()=>console.log('Data saved to MongoDB'));
 
 
 
