@@ -56,25 +56,31 @@
             </div>
             <div class="why-us_list">
                 <div class="card">
-                    <img src="images/award-solid.svg" alt="" class="why-us_card_image">
+                    <img src="images/award-solid.png" alt="" class="why-us_card_image">
                     <p class="why-us_card_content"></p>
                 </div>
                 <div class="card">
-                    <img src="images/house-solid.svg" alt="" class="why-us_card_image">
+                    <img src="images/house-solid.png" alt="" class="why-us_card_image">
                     <p class="why-us_card_content"></p>
                 </div>
                 <div class="card">
-                    <img src="images/hourglass-solid.svg" alt="" class="why-us_card_image">
+                    <img src="images/hourglass-solid.png" alt="" class="why-us_card_image">
                     <p class="why-us_card_content"></p>
                 </div>
                 <div class="card">
-                    <img src="images/mobile-screen-button-solid.svg" alt="" class="why-us_card_image">
+                    <img src="images/mobile-screen-button-solid.png" alt="" class="why-us_card_image">
                     <p class="why-us_card_content"></p>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="news">
+        <div class="_container">
+            <div class="news_container">
+                <img src="images/Blue.png" alt="news">
+            </div>
+        </div>
+    </div>
     <div class="why-abroad">
         <div class="_container">
             <h2 class="why-abroad_title">Учеба за границей</h2>
@@ -91,7 +97,7 @@
 
     <div class="swiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url(../images/thailand.jpg);">
+            <div class="swiper-slide" style="background-image: url(images/thailand.jpg);">
                 <div class="film_swiper">
                     <div class="_container">
                         <div class="swiper_container">
@@ -111,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide" style="background-image: url(../images/greece.jpg);">
+            <div class="swiper-slide" style="background-image: url(images/greece.jpg);">
                 <div class="film_swiper">
                     <div class="_container">
                         <div class="swiper_container">
@@ -124,6 +130,7 @@
                                 <li class="swiper_list"><span class="swiper_list_element">Менеджмент</span></li>
                                 <li class="swiper_list"><span class="swiper_list_element">Маркетинг</span></li>
                             </ul>
+                            <p class="swiper_content fade-in">Средняя стимость обучения в год: 1500$</p>
                             <a href="greece">
                                 <button class="swiper_button fade-in">Подробнее</button>
                             </a>
@@ -131,7 +138,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide" style="background-image: url(../images/malaysia.jpg);">        
+            <div class="swiper-slide" style="background-image: url(images/malaysia.jpg);">        
                 <div class="film_swiper">
                     <div class="_container">
                         <div class="swiper_container">
@@ -171,6 +178,28 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/animation.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/8066c399ae.js" crossorigin="anonymous"></script>
+
+    <div class="film_connect">
+        <div class="connect_us">
+            <form action="/signup" method="post">
+                <button class="x"> <span style="color: #707070;">:</span><span style="color: #707070;">:</span>X<span style="color: #707070;">:</span><span style="color: #707070;">:</span></button> <!-- Закрывалка формы -->    
+                <h1 class="signup_header">Свяжитесь с нами</h1>
+                <div class="form_sorted">
+                    <div class="namel">
+                        <input name="name" class="form_signup" type="text" placeholder="Имя" style="width: calc(35% - 5px); margin-right: 5px;">
+                        <input name="lname" class="form_signup" type="text" placeholder="Фамилия" style="width: calc(35% - 5px); margin-left: 5px;" >
+                    </div>
+                    <input name="email" class="form_signup" type="email" placeholder="Электронная почта">
+                    <input name="number" class="form_signup" type="text" placeholder="Номер телефона">
+                </div>  
+                <button class="signup_button" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+
+    </footer>
 </body>
 
 </html>

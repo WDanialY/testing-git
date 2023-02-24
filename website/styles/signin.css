@@ -102,18 +102,6 @@ input{
     flex-direction: row;
 }
 
-.signup_form{
-    width: 430px;
-    height: 500px;
-    margin: 0 auto;
-    background-color: #fff;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    border-radius: 20px;
-    padding: 0 30px;
-}
-
 .bg_img{
     width: 40%;
     height: 100%;
@@ -128,6 +116,18 @@ input{
     justify-content: center;
     display: flex;
     background-color: #00ACDC;
+}
+
+.signup_form{
+    width: 430px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    padding: 0 30px;
 }
 
 .namel{
@@ -195,4 +195,27 @@ input{
     justify-content: center;
     display: flex;
     border-radius: 20px;
+}
+
+
+/* connect with us page*/
+
+.film_connect{
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+.connect_us{
+    width: 430px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    padding: 0 30px;
 }

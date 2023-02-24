@@ -9,6 +9,10 @@ top: 70px;
 
 /*Hero Shot*/
 
+input{
+    margin: 5px auto;
+}
+
 .hero-shot{
     position: relative;
     top: 70px;
@@ -115,8 +119,21 @@ top: 70px;
     background-color: var(--accent-color);
 }
 
+.news{
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: 140px;
+    background-color: #dadada;
+}
 
-
+.news_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -279,6 +296,98 @@ ul{
 
 
 
+/* Connect with us page*/
+
+.film_connect{
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    top: 70px;
+    height: 1000px;
+    position: fixed;
+    z-index: 3;
+    display: none;
+}
+
+.connect_us{
+    width: 350px;
+    height: 400px;
+    margin: 100px auto 0; 
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    padding: 0 30px;
+}
+
+.signup_header{
+    display: inline-block;
+    color: #00ACDC;
+    padding: 0;
+    margin: 10px 36px 20px;
+    font-size: 38px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    text-align: center;
+}
+
+.form_signup{
+    width: 70%;
+    border: solid 2px #00acdc;
+    border-radius: 15px; 
+    background-color: #fff;
+    display: block;
+    padding: 10px 0 10px 20px;
+    font-size: 16px;
+}
+
+.form_sorted{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.signup_button{
+    margin: 10px 146px;
+    padding: 15px;
+    height: 51px;
+    left: calc(50% - 139px/2 + 1.5px);
+    top: calc(50% - 51px/2 + 168.5px);
+    background: linear-gradient(180deg, #00ACDC 0%, #0058DC 100%);
+    border-radius: 15px;
+    border: none;
+    color: var(--neutral-color);
+}
+
+.namel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.x{
+    font-weight: 500;
+    color: #00ACDC;
+    font-size: 15px;
+    background-color: #707070;
+    height: 25px;
+    border-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    right: 39%;
+    top: 12%;
+}
+
+.film_active{
+    display: block;
+}
+
+.footer{
+    width: 100%;
+    height: 200px;
+}
 
 /* Adaptation */
 
@@ -294,3 +403,260 @@ ul{
         text-align: center;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .film_connect {
+    height: auto;
+    }
+    .connect_us {
+    width: 90%;
+    margin: 50px auto 0;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    }
+    .signup_header {
+    font-size: 28px;
+    margin: 10px 20px 20px;
+    }
+    .form_signup {
+    border: solid 2px #00acdc;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    }
+    .signup_button {
+    margin: 10px auto;
+    padding: 10px;
+    height: 40px;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 20px;
+    }
+    .x {
+    font-size: 12px;
+    height: 20px;
+    right: 10%;
+    top: 5%;
+    }
+
+
+    input{
+        margin: 5px auto;
+    }
+    
+    .hero-shot{
+        position: relative;
+        top: 70px;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-image: url(../images/student.jpg);
+        background-clip: border-box;
+        /*background-attachment: fixed;*/
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .film{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    
+    .hook{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        gap: 25px;
+        transition: .5s !important;
+    }
+    
+    .hook_header{
+        color: var(--neutral-color);
+        font-size: 48px;
+        line-height: 102%;
+    }
+    .hook_text{
+        color: var(--neutral-color);
+        font-size: 20px;
+        line-height: 133%;
+        
+    }
+    .hook_button{
+        color: var(--neutral-color);
+        background-color: var(--accent-color);
+        width: 300px;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        font-size: 24px;
+        transition: var(--transition);
+        position: absolute;
+        bottom: 125px;
+    }
+    .hook_button:hover{
+        background-color: var(--accent-hover);
+    }
+    
+    
+    
+    
+    /* Why Us */
+    
+    .why-us{
+        position: relative;
+        top: 70px;
+        width: 100%;
+        height: 610px;
+        padding: 70px 0;
+    }
+    
+    .why-us_intro{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    
+    .why-us_title{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    
+    .why-us_context{
+        font-size: 20px;
+    }
+    
+    .why-us_list{
+        margin: 0 auto;
+        display: grid;
+        width: 80%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .why-us_card_image{
+        width: 50px;
+    }
+    .why-us_card_image::after{
+        content: '';
+        background-color: var(--accent-color);
+    }
+    
+    .news{
+        position: relative;
+        top: 70px;
+        width: 100%;
+        height: 140px;
+        background-color: #dadada;
+    }
+    
+    .news_container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    
+    
+    
+    /* Why Abroad Section */
+    
+    .why-abroad{
+        position: relative;
+        top: 70px;
+        width: 100%;
+        padding: 80px 0;
+        text-align: center;
+    }
+    
+    .why-abroad_title{
+        color: var(--primary-color);
+        font-size: 36px;
+        font-weight:700;
+        margin-bottom: 30px;
+    }
+    
+    .why-abroad_content{
+        color: var(--primary-color);
+        font-size: 24px;
+    }
+
+
+    .hero-shot{
+        top: 50px;
+        height: calc(100vh - 50px);
+    }
+    
+    .hook{
+        width: 80%;
+        gap: 15px;
+    }
+    
+    .hook_header{
+        font-size: 32px;
+        line-height: 100%;
+    }
+    .hook_text{
+        font-size: 16px;
+        line-height: 120%;
+    }
+    .hook_button{
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+        bottom: 80px;
+    }
+    
+    .why-us{
+        top: 50px;
+        height: auto;
+        padding: 50px 0;
+    }
+    
+    .why-us_title{
+        font-size: 30px;
+    }
+    
+    .why-us_context{
+        font-size: 16px;
+    }
+    
+    .why-us_list{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+    
+    .why-us_card_image{
+        width: 30px;
+    }
+    
+    .why-abroad{
+        top: 50px;
+        padding: 50px 0;
+    }
+    
+    .why-abroad_title{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .why-abroad_content{
+        font-size: 16px;
+    }
+    
+
+
+    }
