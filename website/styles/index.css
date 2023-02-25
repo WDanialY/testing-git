@@ -131,7 +131,7 @@ input{
 
 .news_container{
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,10 +139,11 @@ input{
 
 .news_{
     height: 60px;
+    width: 25%;
     display: flex;
     flex-direction: row;
     margin: 5%;
-}
+} 
 
 
 /* Why Abroad Section */
@@ -193,7 +194,7 @@ input{
     font-size: 18px;
     text-align: center;
     color: var(--neutral-color);
-}
+} 
 /*
 SVG Background
 Will be used
@@ -298,9 +299,9 @@ ul{
     background-color: var(--accent-hover);
 }
 
-
+ 
 /* Footer */
-
+ /*
 .footer{
     width: 100%;
     height: 300px;
@@ -328,10 +329,10 @@ ul{
 .footer_icon:hover{
     background-color: #b3b3b3;
 }
-
+*/
 /* Connect with us page*/
 
-.film_connect{
+ .film_connect{
     background-color: rgba(0, 0, 0, .5);
     width: 100%;
     top: 70px;
@@ -415,7 +416,7 @@ ul{
 
 .film_active{
     display: block;
-}   
+}  
 
 /* Adaptation */
 
@@ -468,11 +469,11 @@ ul{
 ._container{
     padding: 0 2vw;
 }
-/* 
+ 
 .news_{
     display: none
-} */
-}
+} 
+} 
 
 /* 
 @media only screen and (max-width: 1500px){
@@ -486,4 +487,4 @@ ul{
     .footer_icons{
         margin-left: 550px;
     }
-    } */
+}
