@@ -44,6 +44,7 @@ input{
 }
 
 .wrong_password{
+    display: none;
     color: red;
     font-weight: 500;
     text-align: center;

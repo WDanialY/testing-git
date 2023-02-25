@@ -125,4 +125,28 @@ Header has to be the same in every page
 }
 
 
+.template_main{
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.template_card{
+    max-width: 300px;
+    padding: 30px;
+    background-color: var(--neutral-color);
+    border-radius: 20px;
+}
+
+.template_content{
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
 /* Adaptation */

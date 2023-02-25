@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/signin.css">
+    <title>learnera</title>
 
-    <link rel="icon" href="../images/icon.png">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
     <header class="header">
         <div class="_container">
@@ -30,26 +31,16 @@
             </div>
         </div>
     </header>
-
-    <div class="signin_container">
-        <div class="signin_form">
-            <h1 class="signin_header">Вход</h1>
-            <form action="/signin" method="post">
-                <input name="email" class="form" type="email" placeholder="Электронная почта">
-                <input name="password" class="form" type="password" placeholder="Пароль">
-                <div class="wrong_password">
-                    <p>Пароль неверный</p>
-                </div>
-                <div class="forgot">
-                    <p><a href="forgot-password.html" class="forgot_password">Восстановить пароль</a></p>
-                </div>
-    
-                <button class="signin_button" type="submit">Войти</button>
-            </form>
-
-            <div class="forgot">
-                <p>Нет аккаунта? <a href="signup.html" class="forgot_password">Регистрация</a></p>
-            </div>
+    <div class="template_main">
+        <div class="template_card">
+            <p class="template_content"></p>
         </div>
     </div>
+
+    <script async src="//www.instagram.com/embed.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/animation.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/8066c399ae.js" crossorigin="anonymous"></script>
 </body>
+</html>
