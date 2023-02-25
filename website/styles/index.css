@@ -139,8 +139,9 @@ input{
 
 .news_{
     height: 60px;
-    width: 25%;
+
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     margin: 5%;
 } 
