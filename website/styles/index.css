@@ -114,10 +114,6 @@ input{
     height: 50px;
     margin-right: 15px;
 }
-.why-us_card_image::after{
-    content: '';
-    background-color: var(--accent-color);
-}
 
 .card{
     width: 100%;
