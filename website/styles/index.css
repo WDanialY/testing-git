@@ -302,7 +302,7 @@ ul{
 
  
 /* Footer */
- /*
+/*  
 .footer{
     width: 100%;
     height: 300px;
@@ -329,8 +329,22 @@ ul{
 
 .footer_icon:hover{
     background-color: #b3b3b3;
+} */
+
+.footer_container{
+    position: relative;
+    top: 70px;
+    height: 150px;
+    width: 100%;
+    background-color: var(--primary-color);
 }
-*/
+.foot{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 /* Connect with us page*/
 
  .film_connect{
@@ -438,6 +452,17 @@ ul{
     .news_container{
         width: 750px;
     }
+
+    .why-us_list{
+        margin: 0 auto;
+        display: grid;
+        max-width: 500px;
+        height: 100%;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    
     
 .news_{
     margin: 1%;
@@ -464,8 +489,8 @@ ul{
 }
 
 .why-us_list{
-    margin: 0;
-    gap: 10px;
+    
+    gap: 50px;
 }
 ._container{
     padding: 0 2vw;

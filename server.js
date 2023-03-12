@@ -10,6 +10,9 @@
  const cookieParser = require("cookie-parser");
  const app = express();
 
+ const Login = "Danial Yerzhigit";
+ var pl = false;
+
  const transporter = nodemailer.createTransport({
    host: 'smtp.gmail.com',
    port: 587,
@@ -61,20 +64,7 @@
 // # PAGE REQUEST
 
  app.get("/", function(req, res) {
-      if(cookieCheck(req)){
-         fs.readFile(__dirname + "/website/index.html", "utf-8", (err, data)=>{
-            if (err){
-               console.error(err);
-               res.status(500).send("Internal Server Error");
-               return;
-            }
-
-            data = data.replace('<a href="signin" class="signin">Войти</a>', "<p class='signin'>Подтвердите почту.</p>");
-            res.send(data);
-          });
-      }else{
-         res.sendFile(__dirname + "/index.html");
-      }
+    res.sendFile(__dirname + "/index.html");
  });
 
  app.get("/signin", function(req, res){
@@ -89,8 +79,17 @@
     res.sendFile(__dirname + "/website/forgot-password.html");
  });
 
+ app.get("/redirect", (req, res) =>{
+   res.sendFile(__dirname + "/website/redirect.html");
+ })
+
+ app.get('/certificate', (req, res)=>{
+   res.sendFile(__dirname + "/website/certificate.html");   
+ });
 
 //  # Sign Up Process
+
+
 
 app.post("/signup", async (req, res) => {
    const { fname, lname, email, password, confPassword } = req.body;
@@ -106,37 +105,39 @@ app.post("/signup", async (req, res) => {
          res.send("Passwords do not match");
       }else{
          const hashedPassword = await bcrypt.hash(password, saltRounds);
-         const confirmationToken = jwt.sign({email}, '3141592653589793', {expiresIn: '24h'});
+         // const confirmationToken = jwt.sign({email}, '3141592653589793', {expiresIn: '24h'});
 
-         const confimationUrl = `http://localhost:3000/confirm-email?token=${confirmationToken}`;
-         const mailOptions = {
-            from: "danialyerzhigit@gmail.com",
-            to: email,
-            subject: "Confirm your email",
-            html: `<p>Click the link below to confirm your email address:</p><p><a href="${confirmationUrl}">${confirmationUrl}</a></p>`,
-         }
+         // const confimationUrl = `http://localhost:3000/confirm-email?token=${confirmationToken}`;
+         // const mailOptions = {
+         //    from: "danialyerzhigit@gmail.com",
+         //    to: email,
+         //    subject: "Confirm your email",
+         //    html: `<p>Click the link below to confirm your email address:</p><p><a href="${confirmationUrl}">${confirmationUrl}</a></p>`,
+         // }
 
-         transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
-              console.log(error);
-              res.status(500).send("Error sending confirmation email");
-            } else {
-              console.log("Confirmation email sent: " + info.response);
-              res.redirect(301, "/signin");
-            }
-          });
+         // transporter.sendMail(mailOptions, (error, info) => {
+         //    if (error) {
+         //      console.log(error);
+         //      res.status(500).send("Error sending confirmation email");
+         //    } else {
+         //      console.log("Confirmation email sent: " + info.response);
+         //      res.redirect(301, "/signin");
+         //    }
+         //  });
           const userReg = await User.create({email, fname, lname, password: hashedPassword, confirmed: false});
 
-          fs.readFile(__dirname + "/website/template.html", "utf-8", (err, data)=>{
-            if (err){
-               console.error(err);
-               res.status(500).send("Internal Server Error");
-               return;
-            }
+         //  fs.readFile(__dirname + "/website/template.html", "utf-8", (err, data)=>{
+         //    if (err){
+         //       console.error(err);
+         //       res.status(500).send("Internal Server Error");
+         //       return;
+         //    }
 
-            data = data.replace("<p></p>", "<p class='template_content'>Подтвердите почту.</p>");
-            res.send(data);
-          });
+         //    data = data.replace("<p></p>", "<p class='template_content'>Подтвердите почту.</p>");
+
+         //    res.send(data);
+         //  });
+         res.redirect('/signin');
       }
    }catch (err){
       res.status(400).json({error: err.message});
@@ -178,15 +179,26 @@ app.post("/signin", async (req, res) => {
    try{
       const user = await User.findOne({email});
       if(!user){
-         return res.status(401).json({error: 'Invalid email or password 1'});
+         return res.status(401).json({error: 'Invalid email or password'});
       }
 
       const match = await bcrypt.compare(password, user.password);
       if(!match){
-         return res.status(401).json({error: 'Invalid email or password 2'});
+         return res.status(401).json({error: 'Invalid email or password'});
       }
-      res.cookie('token', jwt.sign({email}, '3141592653589793'), {httpOnly: true});
+      res.cookie('token', jwt.sign({email}, '3141592653589793'), {httpOnly: true, maxAge: 24 * 60 * 60 * 1000});
+      pl = true;
       res.redirect('/');
+      // res.redirect('/');
+      // fs.readFile(__dirname + '/website/index.html', "utf-8", (err, data) =>{
+      //    if (err){
+      //       console.error(err);
+      //       res.status(500).send("Internal Server Error");
+      //       return;
+      //    }
+      //    data = data.replace('<a href="signin.html" class="signin">Войти</a>', '<a href="/" class = "signin">' + user.fname + ' ' + user.lname + '</a>');
+      //    res.send(data);
+      // })
 
    }catch (err){
       res.status(400).json({error: err.message});
